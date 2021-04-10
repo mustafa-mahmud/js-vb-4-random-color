@@ -1,6 +1,7 @@
 'use strict';
 
 const btn = document.querySelector('button');
+const h1 = document.querySelector('h1');
 const letters = '0123456789abcdef';
 
 function randomColor() {
@@ -14,6 +15,7 @@ function randomColor() {
 }
 
 function changeBackgroundColor() {
+  h1.textContent = randomColor();
   document.body.style.backgroundColor = randomColor();
 }
 
